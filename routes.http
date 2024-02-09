@@ -1,0 +1,25 @@
+GET http://127.0.0.1:3333/tasks
+
+###
+POST http://127.0.0.1:3333/task
+Content-type: application/json
+
+{
+  "title": "Comprar Frutas",
+  "description": "Frutas: Laranja, maçã, banana, melancia",
+  "priority": "media"
+}
+
+###
+DELETE http://127.0.0.1:3333/task/?id=28489584-3f2d-4e06-aa1a-b3d11966c2b2
+
+###
+PUT http://127.0.0.1:3333/task/?id=a4f954d7-04ef-48f6-9d81-bc13a3c20dd8
+Content-type: application/json
+
+{
+  "title": "Comprar Frutas para viagem",
+  "description": "Frutas: Laranja, maçã, banana, melancia",
+  "priority": "media",
+  "status": true
+}
